@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Ingreso de productos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/textView1"
+        android:layout_marginTop="29.8dp"
+        android:textStyle="bold|italic"
+        android:textSize="22dp"
+        android:textAlignment="center" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginTop="19.0dp">
+        <TextView
+            android:text="Codigo:"
+            android:layout_width="83.6dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="20.4dp"
+            android:textStyle="bold"
+            android:textSize="21dp" />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="220.0dp"
+            android:layout_height="53.8dp"
+            android:id="@+id/cod"
+            android:layout_marginLeft="6.8dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginRight="30.0dp"
+            android:hint="Ingrese el codigo"
+            android:textColorHint="@android:color/darker_gray"
+            android:drawableBottom="@android:color/background_dark" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="19.0dp">
+        <TextView
+            android:text="Nombre:"
+            android:layout_width="83.6dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="20.4dp"
+            android:textStyle="bold"
+            android:textSize="21dp" />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="220.0dp"
+            android:layout_height="53.8dp"
+            android:id="@+id/nom"
+            android:layout_marginLeft="6.8dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginRight="30.0dp"
+            android:hint="Ingrese el nombre"
+            android:textColorHint="@android:color/darker_gray"
+            android:drawableBottom="@android:color/background_dark" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="19.0dp">
+        <TextView
+            android:text="Precio:"
+            android:layout_width="83.6dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="20.4dp"
+            android:textStyle="bold"
+            android:textSize="21dp" />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="220.0dp"
+            android:layout_height="53.8dp"
+            android:id="@+id/precio"
+            android:layout_marginLeft="6.8dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginRight="30.0dp"
+            android:hint="Ingrese el precio"
+            android:textColorHint="@android:color/darker_gray"
+            android:drawableBottom="@android:color/background_dark" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:layout_marginTop="19.0dp">
+        <TextView
+            android:text="Categoria:"
+            android:layout_width="105.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="20.4dp"
+            android:textStyle="bold"
+            android:textSize="21dp" />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="220.0dp"
+            android:layout_height="53.8dp"
+            android:id="@+id/cat"
+            android:layout_marginLeft="4.3dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginRight="30.0dp"
+            android:hint="Ingrese la categoria"
+            android:textColorHint="@android:color/darker_gray"
+            android:drawableBottom="@android:color/background_dark" />
+    </LinearLayout>
+    <Button
+        android:text="Ingresar producto"
+        android:layout_width="270.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btningresar"
+        android:layout_marginLeft="44.7dp"
+        android:layout_marginTop="21.8dp" />
+ 
+
+</LinearLayout>

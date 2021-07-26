@@ -9,7 +9,7 @@
     android:paddingRight="5dp"
     android:paddingBottom="5dp"
     android:paddingTop="5dp">
-    "TEST GITHUB"
+
     <LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"
@@ -69,7 +69,7 @@
                 android:inputType="textMultiLine"
                 android:layout_width="221.5dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText1"
+                android:id="@+id/usu"
                 android:layout_marginLeft="37.0dp"
                 android:background="@android:drawable/edit_text"
                 android:layout_marginRight="30.0dp"
@@ -98,7 +98,7 @@
                 android:inputType="textPassword"
                 android:layout_width="228.5dp"
                 android:layout_height="match_parent"
-                android:id="@+id/editText2"
+                android:id="@+id/pass"
                 android:layout_marginLeft="16.5dp"
                 android:background="@android:drawable/edit_text"
                 android:layout_marginRight="17.5dp"
@@ -108,12 +108,13 @@
             android:text="INGRESAR"
             android:layout_width="166.0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button1"
+            android:id="@+id/ing"
             android:layout_marginTop="27.0dp"
             android:foregroundGravity="center"
             android:layout_marginLeft="103.5dp"
             android:textStyle="bold"
-            app:backgroundTint="@android:color/holo_blue_dark" />
+            app:backgroundTint="@android:color/holo_blue_dark"
+            android:background="@drawable/btn" />
         <LinearLayout
             android:orientation="horizontal"
             android:minWidth="25px"
@@ -143,6 +144,13 @@
                 android:layout_marginTop="26.4dp"
                 android:layout_marginLeft="8.8dp" />
         </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout6" />
 
     </LinearLayout>
 
