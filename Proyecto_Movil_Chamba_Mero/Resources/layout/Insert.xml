@@ -127,6 +127,62 @@
             android:textColorHint="@android:color/darker_gray"
             android:drawableBottom="@android:color/background_dark" />
     </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5"
+        android:layout_marginTop="19.0dp">
+        <TextView
+            android:text="Color:"
+            android:layout_width="105.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="20.4dp"
+            android:textStyle="bold"
+            android:textSize="21dp" />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="220.0dp"
+            android:layout_height="53.8dp"
+            android:id="@+id/color"
+            android:layout_marginLeft="4.3dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginRight="30.0dp"
+            android:hint="Ingrese el color"
+            android:textColorHint="@android:color/darker_gray"
+            android:drawableBottom="@android:color/background_dark" />
+    </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6"
+        android:layout_marginTop="19.0dp">
+        <TextView
+            android:text="Talla:"
+            android:layout_width="105.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="20.4dp"
+            android:textStyle="bold"
+            android:textSize="21dp" />
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="220.0dp"
+            android:layout_height="53.8dp"
+            android:id="@+id/talla"
+            android:layout_marginLeft="4.3dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginRight="30.0dp"
+            android:hint="Ingrese la talla"
+            android:textColorHint="@android:color/darker_gray"
+            android:drawableBottom="@android:color/background_dark" />
+    </LinearLayout>
     <Button
         android:text="Ingresar producto"
         android:layout_width="270.5dp"

@@ -15,39 +15,33 @@
         android:textStyle="bold|italic"
         android:textSize="22dp"
         android:textAlignment="center" />
-    <Button
-        android:text="CRUD Usuarios"
-        android:layout_width="315.3dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/bntIngresarProd"
-        android:layout_marginLeft="54.2dp"
-        android:layout_marginTop="35.3dp" />
+    
     <Button
         android:text="CRUD Productos"
         android:layout_width="315.3dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
+        android:id="@+id/btncrud_prod"
         android:layout_marginLeft="54.2dp"
         android:layout_marginTop="35.3dp" />
     <Button
         android:text="CRUD Categorias"
         android:layout_width="315.3dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
+        android:id="@+id/btn_crud_cat"
         android:layout_marginLeft="54.2dp"
         android:layout_marginTop="35.3dp" />
   <Button
         android:text="CRUD Colores"
         android:layout_width="315.3dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
+        android:id="@+id/btncrud_color"
         android:layout_marginLeft="54.2dp"
         android:layout_marginTop="35.3dp" />
   <Button
         android:text="CRUD Tallas"
         android:layout_width="315.3dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
+        android:id="@+id/btncrud_talla"
         android:layout_marginLeft="54.2dp"
         android:layout_marginTop="35.3dp" />
  

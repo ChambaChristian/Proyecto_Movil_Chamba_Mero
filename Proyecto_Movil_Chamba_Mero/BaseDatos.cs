@@ -54,15 +54,17 @@ namespace Proyecto_Movil_Chamba_Mero
             con.Close();
             return valor;
         }
-        public void AgregarProducto(string codigo, string nombre, double precio, int categoria)
+        public void AgregarProducto(string codigo, string nombre, double precio, int categoria, int color, int tallas)
         {
-            string url = "INSERT INTO Tbl_producto (prod_cod, prod_nombre, prod_precio, cat_id VALUES (@codigo, @nombre, @precio, @categoria)";
+            string url = "INSERT INTO Tbl_producto prod_cod, prod_nombre, prod_precio, cat_id, color_id, tallas_Id VALUES (@codigo, @nombre, @precio, @categoria, @color, @tallas)";
             con.Open();
             SqlCommand command = new SqlCommand(url, con);
             command.Parameters.Add("@codigo", SqlDbType.VarChar, 10).Value = codigo;
             command.Parameters.Add("@nombre", SqlDbType.VarChar, 30).Value = nombre;
-            command.Parameters.Add("@codigo", SqlDbType.Float, 30).Value = precio;
-            command.Parameters.Add("@codigo", SqlDbType.Int).Value = categoria;
+            command.Parameters.Add("@precio", SqlDbType.Float, 30).Value = precio;
+            command.Parameters.Add("@categoria", SqlDbType.Int).Value = categoria;
+            command.Parameters.Add("@color", SqlDbType.Int).Value = color;
+            command.Parameters.Add("@tallas", SqlDbType.Int).Value = tallas;
             command.ExecuteReader();
             con.Close();
         }

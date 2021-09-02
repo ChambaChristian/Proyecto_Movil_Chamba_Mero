@@ -5,6 +5,8 @@ using AndroidX.AppCompat.App;
 using Android.Widget;
 using System;
 using Android.Content;
+using Plugin.LocalNotifications;
+
 
 namespace Proyecto_Movil_Chamba_Mero
 {
@@ -12,12 +14,14 @@ namespace Proyecto_Movil_Chamba_Mero
     public class MainActivity : AppCompatActivity
     {
         BaseDatos conex = new BaseDatos();
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
             int contador = 0;
+
 
             var usuario = FindViewById<EditText>(Resource.Id.usu);
             var contra = FindViewById<EditText>(Resource.Id.pass);
@@ -31,6 +35,7 @@ namespace Proyecto_Movil_Chamba_Mero
                     Toast.MakeText(this, "Bienvenido al Sistema Administrador", ToastLength.Short).Show();
                     Intent intent = new Intent(this, typeof(Admin));
                     StartActivity(intent);
+                    CrossLocalNotifications.Current.Show("Login realizado", "Se ha realizado un login en su cuenta y ha sido exitoso",0,DateTime.Now.AddSeconds(0));
                 }
                 else if (conex.Ingresar(usuario.Text, contra.Text) == 2)
                 {
@@ -77,11 +82,7 @@ namespace Proyecto_Movil_Chamba_Mero
 
 
 
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        
+       
         }
-    }
 }

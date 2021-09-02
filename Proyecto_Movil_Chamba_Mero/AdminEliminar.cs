@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Plugin.LocalNotifications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,7 @@ namespace Proyecto_Movil_Chamba_Mero
             btnEliminar.Click += delegate
             {
                 conex.EliminarProducto(txtCodigo3.Text);
+                CrossLocalNotifications.Current.Show("Producto eliminado", "Se ha eliminado un producto de la base de datos", 0, DateTime.Now.AddSeconds(0));
             };
         }
     }

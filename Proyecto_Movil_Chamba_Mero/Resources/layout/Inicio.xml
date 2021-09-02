@@ -15,27 +15,27 @@
         android:textStyle="bold|italic"
         android:textSize="22dp"
         android:textAlignment="center" />
+
     <Button
+        android:text="Modificar producto"
+        android:layout_width="315.3dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnmodi"
+        android:layout_marginLeft="54.2dp"
+        android:layout_marginTop="35.3dp" />
+    <Button
+        android:text="Eliminar producto"
+        android:layout_width="315.3dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btneli"
+        android:layout_marginLeft="54.2dp"
+        android:layout_marginTop="35.3dp" />
+     <Button
         android:text="Ingresar producto"
         android:layout_width="315.3dp"
         android:layout_height="wrap_content"
-        android:id="@+id/bntIngresarProd"
+        android:id="@+id/btningresarya"
         android:layout_marginLeft="54.2dp"
         android:layout_marginTop="35.3dp" />
-    <Button
-        android:text="Modificar contacto"
-        android:layout_width="315.3dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:layout_marginLeft="54.2dp"
-        android:layout_marginTop="35.3dp" />
-    <Button
-        android:text="Ver contactos"
-        android:layout_width="315.3dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:layout_marginLeft="54.2dp"
-        android:layout_marginTop="35.3dp" />
- 
 
 </LinearLayout>

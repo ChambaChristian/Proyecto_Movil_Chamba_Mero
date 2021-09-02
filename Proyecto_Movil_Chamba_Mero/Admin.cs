@@ -19,7 +19,24 @@ namespace Proyecto_Movil_Chamba_Mero
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Inicio);
-
+            var ingresar = FindViewById<Button>(Resource.Id.btningresarya);
+            var modificar = FindViewById<Button>(Resource.Id.btnmodi);
+            var eliminar = FindViewById<Button>(Resource.Id.btneli);
+            ingresar.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(AdminIngresar));
+                StartActivity(intent);
+            };
+            modificar.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(AdminEditar));
+                StartActivity(intent);
+            };
+            eliminar.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(AdminEliminar));
+                StartActivity(intent);
+            };
         }
     }
 }

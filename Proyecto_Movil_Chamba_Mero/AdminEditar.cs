@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Plugin.LocalNotifications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,7 @@ namespace Proyecto_Movil_Chamba_Mero
             btnEditar.Click += delegate
             {
                 conex.EditarProducto(txtCodigo2.Text, Convert.ToDouble(txtPrecio2));
+                CrossLocalNotifications.Current.Show("Producto modificado", "Se ha modificado un producto en la base de datos", 0, DateTime.Now.AddSeconds(0));
             };
         }
     }

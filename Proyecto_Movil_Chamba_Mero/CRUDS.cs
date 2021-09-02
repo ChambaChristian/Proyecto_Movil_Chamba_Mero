@@ -19,7 +19,14 @@ namespace Proyecto_Movil_Chamba_Mero
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.CRUDSAdmin);
+            var productos = FindViewById<Button>(Resource.Id.btncrud_prod);
 
+            productos.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(Admin));
+                StartActivity(intent);
+            };
         }
+        
     }
 }
